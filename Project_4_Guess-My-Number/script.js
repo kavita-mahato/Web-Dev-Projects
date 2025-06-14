@@ -44,8 +44,8 @@ document.querySelector(".check").addEventListener("click", function () {
    //   Player LOST 
   else if (guess !== secretNumber){
     if (score > 1) {
-    //   document.querySelector(".message").textContent = guess > secretNumber ? "Too High!":"Too Low!";
-      displayMessage('Too Low!')
+      // document.querySelector(".message").textContent = guess > secretNumber ? "Too High!":"Too Low!";
+      displayMessage(guess > secretNumber ? "Too High!":"Too Low!");
       score--;
       document.querySelector(".score").textContent = score;
     } else {
